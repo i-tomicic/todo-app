@@ -11,6 +11,16 @@
   <body>
     <header></header>
     <main>
+      <!-- <span class="clock"></span>
+      <script>
+        function displayTime() {
+          let clock = document.querySelector("clock");
+          let now = new Date();
+          clock.textContent = now.toLocaleTimeString();
+        }
+        displayTime();
+        setInterval(displayTime, 1000);
+      </script> -->
       <section class="section">
         <div class="todo">
           <form action="#" method="post" class="todo__form">
@@ -20,15 +30,14 @@
               placeholder="Enter todo task..."
             />
           </form>
-          <div class="todo__tasks">
-            <div class="todo__task">1. Sredi izgled u CSS-u</div>
+          <p class="todo__error-message">Task is already in array!</p>
+          <div class="todo__tasks">There are no tasks yet.</div>
+          <!-- <div class="todo__tasks">
             <div class="todo__task">
-              2. Napiši JavaScript kôd za dodavanje taskova
+              <p>1. task</p>
+              <a class="todo__task-delete" href="#">Delete</a>
             </div>
-            <div class="todo__task">3. Funkcionalnost brisanja</div>
-            <div class="todo__task">4. Funkcionalnost uređivanja</div>
-            <div class="todo__task">5. Misc</div>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>

@@ -21,6 +21,17 @@
 .todo__form {
 }
 
+.todo__error-message {
+  display: none;
+  text-align: center;
+  background-color: #d6323249;
+  color: #d63232;
+  font-weight: 700;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
 .todo__input {
   width: 100%;
   line-height: 48px;
@@ -35,7 +46,15 @@
 .todo__task {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 10px 0;
   height: 32px;
   border-bottom: 1px solid #666;
+}
+
+.todo__task-delete {
+  text-decoration: none;
+  color: #d63232;
+  padding: 6px 0;
+  font-weight: bold;
 }
